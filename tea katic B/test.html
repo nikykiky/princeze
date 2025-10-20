@@ -6,30 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        .clearfix::after{
+
+        .clearfix::after {
             display: block;
             content: " ";
             clear: both;
         }
-        body{
+
+        body {
             background-color: rgb(28, 37, 37);
         }
-        .wrap{
+
+        .wrap {
             background-color: white;
             margin: 0 auto;
             width: 960px;
         }
-        .header{
+
+        .header {
             margin-left: 15px;
             margin-right: 15px;
             background-image: url("header.jpg");
             height: 250px;
         }
-        .header h1{
+
+        .header h1 {
             text-transform: uppercase;
             font-size: 50px;
             color: white;
@@ -37,90 +42,108 @@
             padding-left: 70px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        .header img{
+
+        .header img {
             margin-top: 15px;
         }
-        .header h2{
-            color:rgb(226, 213, 26);
+
+        .header h2 {
+            color: rgb(226, 213, 26);
             font-family: sans-serif;
             padding-left: 35px;
             display: inline-block;
             padding-bottom: 100px;
 
         }
-        .sadrzaj{
+
+        .sadrzaj {
             width: 960px;
         }
-        .lijevo{
+
+        .lijevo {
             width: 320px;
             float: left;
         }
-        .lijevo h3{
+
+        .lijevo h3 {
             display: inline-block;
-            text-align: justify;
+<<<<<<< HEAD
+            text-align: center;
+=======
+            text-align: left;
+>>>>>>> 41f4c7bd8435265896ade1bf39a98ed0c098f486
             background-color: rgb(226, 213, 26);
             color: darkgoldenrod;
             text-transform: uppercase;
             margin-left: 40px;
-            padding:5px 15px;
+            padding: 5px 15px;
             margin-top: 15px;
         }
-        .lijevo p{
+
+        .lijevo p {
             text-indent: 5px;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 14px;
-            color:rgb(28, 37, 37);
+            color: rgb(28, 37, 37);
             margin-left: 15px;
             padding-top: 15px;
             line-height: 20px;
         }
-        .desno{
+
+        .desno {
             width: 600px;
             float: right;
         }
-        .podnaslov{
+
+        .podnaslov {
             margin-right: 15px;
             margin-top: 35px;
             margin-bottom: 40px;
             text-align: right;
-            color:rgb(75, 40, 25);
+            color: rgb(75, 40, 25);
             border-right: 7px solid rgb(75, 40, 25);
             padding-top: 10px;
             padding-bottom: 10px;
             padding-right: 5px;
         }
-        .paragraf1{
+
+        .paragraf1 {
             font-size: 16px;
             text-indent: 20px;
             line-height: 22px;
-            color:rgb(105, 95, 75);
+            color: rgb(105, 95, 75);
             margin-right: 15px;
             text-align: justify;
         }
-        .paragraf2{
+
+        .paragraf2 {
             font-size: 16px;
             text-indent: 20px;
             line-height: 22px;
-            color:rgb(105, 95, 75);
+            color: rgb(105, 95, 75);
             margin-right: 15px;
             text-align: justify;
         }
-        .roditelj{
+
+        .roditelj {
             width: 600px;
         }
-        .mali1{
-            width:280px;
+
+        .mali1 {
+            width: 280px;
             float: left;
             margin-right: 15px;
             padding-top: 25px;
         }
-        .mali2{
+
+        .mali2 {
             width: 280px;
             float: right;
             margin-right: 15px;
             padding-top: 25px;
         }
-        .mali1 h3{
+
+        .mali1 h3 {
             color: rgb(75, 40, 25);
             border: solid 2px rgb(75, 40, 25);
             border-radius: 5px;
@@ -130,14 +153,16 @@
             margin-top: 10px;
             margin-bottom: 10px;
         }
-        .mali1 p{
+
+        .mali1 p {
             font-size: 12px;
             text-indent: 20px;
             line-height: 18px;
-            color:rgb(105, 95, 75);
+            color: rgb(105, 95, 75);
             text-align: justify;
         }
-        .mali2 h3{
+
+        .mali2 h3 {
             color: rgb(75, 40, 25);
             border: solid 2px rgb(75, 40, 25);
             border-radius: 5px;
@@ -145,22 +170,25 @@
             padding-top: 10px;
             padding-bottom: 10px;
             margin-top: 10px;
-            margin-bottom: 10px; 
+            margin-bottom: 10px;
             text-align: right;
         }
-        .mali2 p{
+
+        .mali2 p {
             font-size: 12px;
             text-indent: 20px;
             line-height: 18px;
-            color:rgb(105, 95, 75);
+            color: rgb(105, 95, 75);
             text-align: justify;
         }
-        .footer{
-            margin:15px;
+
+        .footer {
+            margin: 15px;
             background-color: rgb(141, 88, 52);
         }
-        .footer p{
-            color:white;
+
+        .footer p {
+            color: white;
             font-size: 14px;
             margin-left: 15px;
             margin-top: 15px;
@@ -199,13 +227,16 @@
             </div>
             <div class="desno">
                 <h3 class="podnaslov"> Nije velik, ali ima sve.</h3>
-                <p class="paragraf1"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, laudantium? Id odio consectetur
+                <h3 class="podnaslov"> Lorem ipsum dolor sit amet consectetur.</h3>
+                <p class="paragraf1"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, laudantium? Id
+                    odio consectetur
                     quidem ab voluptates assumenda tenetur et recusandae adipisci optio perspiciatis, commodi facere
                     dolor vel nihil placeat veritatis quia quasi vitae? Reiciendis, dicta labore cupiditate dolore
                     dignissimos enim eius quo voluptas accusantium repellat id laboriosam accusamus sunt eveniet
                     doloribus sed asperiores eaque.
                 </p>
-                <p class="paragraf2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis blanditiis nam
+                <p class="paragraf2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis
+                    blanditiis nam
                     voluptatibus voluptate, perferendis ipsa similique dolore sit. Similique tempore dignissimos quaerat
                     vel dolore quasi numquam ab aperiam nihil soluta, fuga labore repellat sint quidem magnam ipsam.
                     Odio nihil error ratione obcaecati itaque consectetur assumenda placeat, accusamus, excepturi optio
@@ -234,9 +265,9 @@
         </div>
         <div class="footer">
             <p> Hyundai auto - Split <br>
-             Tršćanska 22 <br>
-             21000 Split <br>
-            T (385) (21) 662 7313 </p>
+                Tršćanska 22 <br>
+                21000 Split <br>
+                T (385) (21) 662 7313 </p>
         </div>
     </div>
 </body>
