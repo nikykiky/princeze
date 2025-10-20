@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<<<<<<< HEAD
+
+=======
+>>>>>>> 92db598b09538de79c9fa142045cd4058d4babf4
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<<<<<<< HEAD
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend> OSOBNI PODACI </legend>
+
+            <label for="ime" class="povecano"> Unesi ime : </label>
+            <input type="text" maxlength="30" placeholder="ime" id="ime" required></input>
+            <br><br>
+
+            <label for="prezime" class="povecano"> Unesi prezime : </label>
+            <input type="text" maxlength="50" placeholder="prezime" id="prezime" required></input>
+            <br><br>
+
+            <label for="mail" class="povecano"> Unesi email adresu : </label>
+            <input type="email" id="mail" required></input>
+            <br><br>
+
+            <label for="kime" class="povecano"> Unesi korisničko ime : </label>
+            <input type="text" minlength="6" maxlength="15" id="kime" required></input>
+            <br><br>
+
+            <label for="loz" class="povecano"> Lozinka </label>
+            <input type="password" id="loz" minlength="8" maxlength="8" required></input>
+            <br><br>
+
+            <label for="ploz" class="povecano"> Potvrda lozinke </label>
+            <input type="password" id="ploz" minlength="8" maxlength="8" required></input>
+            <br><br>
+
+            Spol:
+            <br>
+            <label for="musko">
+                <input type="radio" id="musko" name="spol"> Muško
+            </label>
+            <br>
+            <label for="zensko">
+                <input type="radio" id="zensko" name="spol"> Žensko
+            </label>
+            <br>
+            <label for="ostalo">
+                <input type="radio" id="ostalo" name="spol"> Ostalo
+            </label>
+            <br><br>
+
+            Datum rođenja :
+            <label for="datumr">
+                <input type="date" max="2006-12-31" id="datumr">
+            </label>
+            <br><br>
+
+            <label for="tel" > Telefon </label>
+            <input type="tel" id="tel" placeholder="+385 91-123-1234" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            <br><br>
+
+            Odabir države:
+            <input list="drzave">
+            <datalist id="drzave">
+                <option> Hrvatska </option>
+                <option> Nigerija </option>
+                <option> Njemačka </option>
+                <option> Slovenija </option>
+                <option> Francuska </option>
+            </datalist>
+            <br><br>
+
+            Način komunikacije :
+            <br>
+            <label for="email">
+                <input type="checkbox" id="email"> Email
+            </label>
+            <br>
+            <label for="sms">
+                <input type="checkbox" id="sms"> SMS
+            </label>
+            <br>
+            <label for="telefon">
+                <input type="checkbox" id="telefon"> Telefon
+            </label>
+            <br>
+            <label for="pos">
+                <input type="checkbox" id="pos"> Pošta
+            </label>
+            <br><br>
+
+            Životopis
+            <input type="file">
+            <br><br>
+            <label for="txtarea"> Kratka biografija : </label><br />
+            <textarea name="txtarea" id="txtarea" maxlength="500"> Maksimalno 500 znakova. </textarea>
+            <br><br>
+            <input type="hidden" name="skriveniID" value="3156">
+            <br><br>
+            <input type="image" src="slika.jpg" width="80" height="100">
+            <br>
+            <input type="reset">
+        </fieldset>
+    </form>
+</body>
+
+=======
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Plesni klub</h1>
+        <h3>Ples za sve uzraste</h3>
+    </div>
+    <div class="content">
+        <div id="cards">
+            <div id="tango" class="naslov">
+                <h2>Tango</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe minus ea voluptas qui suscipit alias dignissimos at ipsum doloribus, quod fuga accusamus, recusandae cumque explicabo rerum sint. Libero enim aut at commodi nostrum in saepe doloribus minima labore, voluptatem expedita iure sapiente voluptate. Beatae rem sequi maiores eaque adipisci exercitationem. Earum eveniet nesciunt pariatur laborum modi illo dicta odio cumque deserunt saepe blanditiis assumenda tempora aliquid nihil, possimus placeat ratione! Placeat quasi assumenda maxime totam, natus sunt inventore aperiam voluptatem eaque officiis consequatur accusantium incidunt quidem iusto saepe dicta harum nostrum quibusdam exercitationem expedita dolorem veritatis necessitatibus. Deleniti, molestiae facere.</p>
+            </div>
+            <div id="becki_valcer" class="naslov">
+                <h2>Bečki valcer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe minus ea voluptas qui suscipit alias dignissimos at ipsum doloribus, quod fuga accusamus, recusandae cumque explicabo rerum sint. Libero enim aut at commodi nostrum in saepe doloribus minima labore, voluptatem expedita iure sapiente voluptate. Beatae rem sequi maiores eaque adipisci exercitationem. Earum eveniet nesciunt pariatur laborum modi illo dicta odio cumque deserunt saepe blanditiis assumenda tempora aliquid nihil, possimus placeat ratione! Placeat quasi assumenda maxime totam, natus sunt inventore aperiam voluptatem eaque officiis consequatur accusantium incidunt quidem iusto saepe dicta harum nostrum quibusdam exercitationem expedita dolorem veritatis necessitatibus. Deleniti, molestiae facere.</p>
+            </div>
+            <div id="engleski_valcer" class="naslov">
+                <h2>Engleski valcer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe minus ea voluptas qui suscipit alias dignissimos at ipsum doloribus, quod fuga accusamus, recusandae cumque explicabo rerum sint. Libero enim aut at commodi nostrum in saepe doloribus minima labore, voluptatem expedita iure sapiente voluptate. Beatae rem sequi maiores eaque adipisci exercitationem. Earum eveniet nesciunt pariatur laborum modi illo dicta odio cumque deserunt saepe blanditiis assumenda tempora aliquid nihil, possimus placeat ratione! Placeat quasi assumenda maxime totam, natus sunt inventore aperiam voluptatem eaque officiis consequatur accusantium incidunt quidem iusto saepe dicta harum nostrum quibusdam exercitationem expedita dolorem veritatis necessitatibus. Deleniti, molestiae facere.</p>
+            </div>
+        </div>
+        <div id="section_two">
+            <div id="left">
+                <h1>Tango</h1>
+                <div id="tangodiv">
+                    <div id="tangoleft">
+                        <img src="./images/event_02.jpg" alt="">
+                    </div>
+                    <div id="tangoright">
+                        <h2>Argentinski tango</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>                        
+                    </div>
+                </div>
+            </div>
+            <div id="comment">
+                <h3>Komentar</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur accusamus atque a optio illum, id sapiente exercitationem quo officiis similique odio ea assumenda tempora reprehenderit reiciendis voluptates commodi repellat! Eveniet a voluptates expedita quis corporis, iusto itaque obcaecati placeat necessitatibus tempora impedit minus nemo omnis eius repellendus sapiente! Adipisci vero dolorum autem eum est explicabo aspernatur, id temporibus quod ex nihil maiores alias quae. Laudantium quidem est nostrum, nisi, soluta reiciendis sequi delectus beatae illum, ipsa facilis animi officiis doloribus at. Mollitia, corrupti. Soluta amet magni, sapiente impedit natus dolore vero, cumque velit voluptatibus illum fuga excepturi dicta libero, adipisci fugit? Vero reprehenderit impedit officia! Distinctio iure qui provident ad porro harum repellat, quam necessitatibus odit excepturi recusandae, dolorum esse itaque. Impedit vitae unde ipsa perferendis eveniet quaerat enim molestias possimus doloremque eos.</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="section1">
+            <h3>Plesni klub</h3>
+            <hr />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam mollitia, odio ab earum nostrum explicabo ut neque ipsa ipsum libero?</p>
+        </div>
+        <div id="section2">
+            <h3>O plesu</h3>
+            <hr />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ullam facere quasi repudiandae rerum beatae iusto eveniet fuga laboriosam expedita?</p>
+        </div>
+        <div id="section3">
+            <h3>Kontakt</h3>
+            <hr />
+            <p>Trg Gaje Bulata 19 Split, HR 21000</p>
+            <p>091 5645210</p>
+        </div>
+    </div>
+</body>
+>>>>>>> 92db598b09538de79c9fa142045cd4058d4babf4
+</html>
