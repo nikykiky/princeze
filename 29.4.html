@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #header {
+            background-image: url(img/header.jpg);
+            height: 350px;
+            background-size: cover;
+            background-position: center center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #header h1 {
+            font-size: 50px;
+            color: rgb(100, 23, 23);
+            text-shadow: 0 0 5px #a1a1a1;
+        }
+
+        #header p {
+            font-size: 26px;
+            padding: 10px;
+            background-color: rgba(129, 41, 41, 0.589);
+            border-radius: 5px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+        }
+
+        #content {
+            width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .prvi_stupac {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .post_movies {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 20px;
+            justify-content: space-between;
+        }
+
+        .post_movie:nth-child(1),
+        .post_movie:nth-child(2) {
+            flex-basis: 49%;
+        }
+
+        .post_movie:nth-child(3),
+        .post_movie:nth-child(4),
+        .post_movie:nth-child(5) {
+            flex-basis: 32%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .post_text h2 {
+            background-color: darkorange;
+            color: white;
+            text-align: center;
+            padding: 10px
+        }
+
+        .post_text p {
+            background-color: rgb(245 238, 220);
+            color: rgb(86, 86, 86);
+            padding: 15px;
+            line-height: 1.5;
+
+        }
+
+        .post_movie:nth-child(6) img {
+            width: 100%;
+        }
+
+        .watch h1 {
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 25px;
+
+        }
+
+        .today {
+            display: flex;
+        }
+
+        .today_img {
+            flex: 2
+        }
+
+        .today_text {
+            flex: 3;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+            line-height: 1.5;
+        }
+
+        span {
+            margin-right: 25px;
+        }
+
+        .today_text p,
+        .today_text h2 {
+            padding-left: 10px;
+        }
+
+        .ocjene {
+            margin-top: 50px;
+        }
+
+        .ocjene h1 {
+            margin-bottom: 25px;
+            text-align: center;
+            color: rgb(100, 23, 23);
+            font-size: 30px;
+        }
+
+        .jack_ocjena {
+            background-color: rgb(189, 161, 128);
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            margin-bottom: 20px;
+
+        }
+
+        .jack_ocjena h2 {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-left: 20px;
+            font-size: 30px;
+            text-transform: uppercase;
+
+        }
+
+        .prosjek {
+            background-color: rgb(40, 54, 36);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 15%;
+        }
+
+        .treci-dio {
+            max-width: 100%;
+            background-color: black;
+            color: white;
+            margin: 0 auto;
+            padding: 20px;
+
+        }
+
+        .wrapp {
+            width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .movies-home {
+            flex-basis: 37%;
+
+        }
+
+        .contact-us h3 {
+            display: flex;
+            justify-content: flex-end;
+            padding: 7px;
+        }
+
+        .contact-us p {
+            font-weight: 400;
+            padding: 5px;
+        }
+
+        .movies-home h3 {
+            padding: 7px;
+        }
+
+        .movies-home p {
+            padding: 5px;
+        }
+
+        .treci-dio h3 {
+            padding: 7px;
+        }
+
+        .treci-dio p {
+            line-height: 1.5;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="header">
+        <h1>The Movies Home</h1>
+        <p> horror | drama | comedy | western</p>
+    </div>
+    <!-- header -->
+
+    <div id="content">
+
+        <div class="prvi_stupac">
+
+            <div id="post">
+                <h1>The Movie Post</h1>
+
+                <div class="post_movies">
+
+                    <div class="post_movie">
+
+                        <div class="post_img">
+                            <img src="img/img_1.jpg" alt="fight club">
+                        </div>
+                        <!-- post img -->
+
+                        <div class="post_text">
+                            <h2>Fight Club</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam velit facere eaque magni
+                                provident laudantium veritatis a at, sed illum aliquam unde voluptas rerum inventore
+                                culpa ipsum aliquid magnam libero, cum quae commodi! Rem, ea?</p>
+                        </div>
+
+                    </div>
+                    <!-- post movie1 -->
+
+                    <div class="post_movie">
+
+                        <div class="post_img">
+                            <img src="img/img_2.jpg" alt="jack sparrow">
+                        </div>
+                        <!-- post img -->
+
+                        <div class="post_text">
+                            <h2>Jack Sparrow</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam velit facere eaque magni
+                                provident laudantium veritatis a at, sed illum aliquam unde voluptas rerum inventore
+                                culpa ipsum aliquid magnam libero, cum quae commodi! Rem, ea?</p>
+                        </div>
+
+                    </div>
+                    <!-- post movie2 -->
+
+                    <div class="post_movie">
+
+                        <div class="post_img">
+                            <img src="img/img_3.jpg" alt="good bad ugly">
+                        </div>
+                        <!-- post img -->
+
+                        <div class="post_text">
+                            <h2>Good Bad Ugly</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam velit facere eaque magni
+                                provident laudantium veritatis a at, sed illum aliquam unde voluptas rerum inventore
+                                culpa ipsum aliquid magnam libero, cum quae commodi! Rem, ea?</p>
+                        </div>
+
+                    </div>
+                    <!-- post movie3 -->
+
+                    <div class="post_movie">
+
+                        <div class="post_img">
+                            <img src="img/img_4.jpg" alt="sherlock holmes">
+                        </div>
+                        <!-- post img -->
+
+                        <div class="post_text">
+                            <h2>Sherlock Holmes</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam velit facere eaque magni
+                                provident laudantium veritatis a at, sed illum aliquam unde voluptas rerum inventore
+                                culpa ipsum aliquid magnam libero, cum quae commodi! Rem, ea?</p>
+                        </div>
+                    </div>
+                    <!-- post movie4 -->
+
+                    <div class="post_movie">
+
+                        <div class="post_img">
+                            <img src="img/img_6.jpg" alt="the joker">
+                        </div>
+                        <!-- post img -->
+
+                        <div class="post_text">
+                            <h2>The Joker</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam velit facere eaque magni
+                                provident laudantium veritatis a at, sed illum aliquam unde voluptas rerum inventore
+                                culpa ipsum aliquid magnam libero, cum quae commodi! Rem, ea?</p>
+                        </div>
+
+                    </div>
+                    <!-- post movie5 -->
+
+                    <div class="post_movie">
+
+                        <div class="post_img">
+                            <img src="img/img_7.jpg" alt="mission impossible">
+                        </div>
+                        <!-- post img -->
+
+                        <div class="post_text">
+                            <h2>Mission Impossible</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam velit facere eaque magni
+                                provident laudantium veritatis a at, sed illum aliquam unde voluptas rerum inventore
+                                culpa ipsum aliquid magnam libero, cum quae commodi! Rem, ea?</p>
+                        </div>
+                    </div>
+                    <!-- post movie6 -->
+
+                </div>
+                <!-- post movies -->
+
+            </div>
+            <!-- post -->
+
+            <div class="watch">
+                <h1>Watch Today</h1>
+
+                <div class="today">
+
+                    <div class="today_img">
+                        <img src="img/img_8.jpg" alt="baby driver">
+                    </div>
+
+                    <div class="today_text">
+                        <h2>Baby driver</h2>
+                        <p><span>2017</span> <span>121 min</span> <span>action</span> <span>7.78</span>
+                            <span>8.30pm</span>
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quaerat esse quisquam
+                            soluta molestiae adipisci itaque ipsum officiis eveniet autem!</p>
+
+
+
+                    </div>
+
+                </div>
+                <!-- today roditelj -->
+
+            </div> <!-- watch -->
+
+            <div class="ocjene">
+                <h1>Ocjene filmova</h1>
+                <div class="jack_ocjena">
+                    <h2>Jack Sparrow</h2>
+                    <div class="prosjek">
+                        <h3>8.7</h3>
+                        <p>500 glasova</p>
+                    </div>
+                </div>
+
+
+            </div><!-- ocjene -->
+
+
+
+        </div> <!-- prvi -->
+
+
+
+    </div>
+    <!-- content -->
+
+    <div class="treci-dio">
+
+        <div class="wrapp">
+            <div class="movies-home">
+                <h3>The movies Home</h3>
+                <h3>MOVIEST POST</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius perferendis ab cumque deserunt, velit
+                    nulla ullam illum earum error fugiat praesentium suscipit obcaecati nesciunt animi ad ipsam officiis
+                    hic
+                    distinctio in, nemo?</p>
+            </div>
+            <div class="contact-us">
+                <h3>CONTACT</h3>
+                <p>Matice Hrvatske 11 21 000 Split, CROATIA</p>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- treci dio -->
+
+
+
+
+
+</body>
+
+</html>
