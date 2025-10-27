@@ -1,4 +1,4 @@
-import React from "react";
+import Nikolina from "react";
 
 const root = ReactDOM.createRoot(document.getElementById("roojhkhkhjhkt"));
 root.render(
