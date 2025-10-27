@@ -3,11 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .content {
     width: 1200px;
     margin: 0 auto;
     margin-top: 50px;
 }
+
 .header {
     background-image: url(./images/header.jpg);
     background-repeat: no-repeat;
@@ -16,22 +18,26 @@
     flex-direction: column;
     justify-content: flex-end;
 }
+
 .header h1 {
     font-size: 50px;
     background-color: beige;
     padding: 10px;
     color: brown;
 }
+
 .header h3 {
     font-size: 18px;
     background-color: rgb(76, 26, 26);
     padding: 10px;
     color: white;
 }
+
 #cards {
     display: flex;
     margin-bottom: 50px;
 }
+
 #tango {
     background-color: lightgray;
     padding: 20px;
@@ -39,6 +45,7 @@
     line-height: 1.5;
     flex: 1;
 }
+
 #becki_valcer {
     background-color: lightgreen;
     padding: 20px;
@@ -46,6 +53,7 @@
     line-height: 1.5;
     flex: 1;
 }
+
 #engleski_valcer {
     background-color: orange;
     padding: 20px;
@@ -53,36 +61,44 @@
     line-height: 1.5;
     flex: 1;
 }
+
 .naslov h2 {
     text-align: center;
     margin-bottom: 15px;
     font-size: 40px;
 }
+
 #section_two {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 #left {
     width: 880px;
     background-color: wheat;
 }
+
 #left h1 {
     text-align: center;
     font-size: 40px;
 }
+
 #comment {
     width: 277px;
     background-color: lightcyan;
     padding: 10px;
 }
+
 #tangodiv {
     background-color: grey;
     display: flex;
 }
+
 #tangoleft {
     flex-basis: 30%;
 }
+
 #tangoright {
     flex-basis: 70%;
     display: flex;
@@ -90,21 +106,25 @@
     align-content: center;
     justify-content: center;
 }
+
 #tangoright h2 {
     align-self: flex-end;
     color: white;
 }
+
 #tangoright p {
     align-self: flex-end;
     color: white;
     background-color: lightgray;
     padding: 10px;
 }
+
 #tangoleft img {
     display: block;
     height: auto;
     max-width: 100%;
 }
+
 #footer {
     display: flex;
     flex-direction: row;
@@ -114,15 +134,21 @@
     margin-top: 25px;
     justify-content: space-between;
 }
+
 #footer hr {
     color: white;
 }
-#section1, #section2, #section3 {
+
+#section1,
+#section2,
+#section3 {
     flex-basis: 30%;
 }
+
 #footer h3 {
     color: white;
 }
+
 #section3 {
     text-align: right;
 }
