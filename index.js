@@ -1,4 +1,4 @@
-import React from "react";
+import Luka from "react";
 
 const root = ReactDOM.createRoot(document.getElementById("roojhkhkhjhkt"));
 root.render(
