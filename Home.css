@@ -1,0 +1,780 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:sans-serif;
+}
+
+
+
+
+/*
+PRVA STRANICA
+*/
+
+
+
+
+.dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+.dropbtn {
+    cursor: pointer;
+    border-radius: 4px;
+    background-image: url(IMAGES/menu.png);
+    width: 30px;
+    height:30px;
+    background-size:cover;
+    background-position: center;
+    border:none;
+    margin:2px;
+    padding:2px;
+    margin-left:10px;
+    background-color: white;
+}
+   
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+ 
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.header{
+    display:flex;
+    flex-direction: column;
+    padding-bottom:5px;
+}
+.cartimg{
+    width:30px;
+    height:30px;
+}
+.header-banner{
+    display: flex;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+.header-banner p {
+    flex:1;
+    text-align:center;
+    margin:0;
+}
+.country{
+    border:none;
+    background-color: rgb(32, 32, 32);
+    color:white
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  gap: 20px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.searchbar {
+  display: flex;
+  width: 100%;               
+  max-width: 600px;          
+  margin: 0 auto;            
+}
+
+.searchbar-input {
+  flex: 1;                   
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 30px 0 0 30px; 
+  outline: none;
+}
+
+.searchbar button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-left: none;
+  background-color: black;
+  color: white;
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+}
+
+.searchbar button:hover {
+  background-color: black;
+}
+
+.btncart {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.news{
+    width:1440px;
+    margin-left:auto;
+    margin-right:auto;
+    border-top: 1px solid black
+}
+.news-naslov{
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:10px;
+    background-color:rgb(0, 0, 0);
+    color:white;
+    padding:7px;
+}
+
+.product-grid {
+    width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-top:2px solid black;
+    margin-top:10px;
+    
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.product-card button {
+    margin-top: 10px;
+    padding: 10px 16px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: black;
+    color:white;
+    
+}
+
+.footer{
+    display:flex;
+    justify-content: space-between;
+    padding:10px 30px;
+    background-color: black;
+    color:white;
+    align-items: center;
+}
+.kontakt{
+    text-align:right;
+}
+
+.social img{
+    width:20px;
+    height:20px;
+    background-color: white;
+    padding:5px;
+    border-radius: 10px;
+    margin-top:10px;
+}
+.copyright{
+    text-align:center;
+}
+.best-sellers{
+    text-align: center;
+    margin-top:20px;
+    margin-bottom:5px;
+    
+}
+
+.newsletter{
+    background-color: rgb(179, 179, 179);
+    width:920px;
+    padding:10px;
+    border-radius:5px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.newsletter h2{
+    color: white;
+}
+.newsletter p {
+    font-weight: bold;
+    
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    margin: 30px auto;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    padding: 5px;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 30px 0 0 30px;
+    font-size: 14px;
+    color: #333;
+}
+
+.input-container button {
+    background-color: #111;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.input-container button:hover {
+    background-color: #333;
+}
+
+
+
+
+/*
+DRUGA STRANICA
+*/
+
+
+
+
+.sizes {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    max-width: 320px;
+    margin: 30px auto;
+}
+
+.size-option {
+    position: relative;
+}
+
+.size-option input[type="radio"] {
+    display: none;
+}
+
+.size-option label {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    font-weight: bold;
+    color: #333;
+    transition: 0.2s;
+}
+
+.size-option input[type="radio"]:checked + label {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.size-option label:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.buy-button {
+    display: inline-block;
+    background-color: #111;
+    color: white;
+    padding: 15px 40px;
+    font-weight: bold;
+    border: none;
+    border-radius: 999px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition:  0.3s;
+    width:500px
+}
+
+.buy-button:hover {
+    background-color: #333;
+}
+
+.content2{
+    display:flex;
+    width:1500px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 70px;
+    gap:300px;
+}
+.showcase-image img{
+    width:600px;
+    height:700px;
+}
+.opis-oglasa{
+    width:500px;
+    align-self:center;
+    height:100%;
+}
+.cijena-patike{
+    margin-top:10px;
+    font-size:25px;
+}
+.opis-patike{
+    margin-top:10px;
+    font-weight: bold;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+    padding: 0 20px;
+    border-top:1px solid black;
+}
+.video-container h1{
+    text-align: center;
+    padding:10px;
+}
+
+
+
+/*
+TRECA STRANICA
+*/
+
+
+
+
+.homepage-link{
+    text-decoration: none;
+    color:black
+}
+.purchase-window{
+    margin-left:auto;
+    margin-right:auto;
+    width:1200px;
+    margin-bottom:170px;
+    
+}
+.naslov-placanja{
+    text-align:center;
+    font-size:40px;
+    padding:10px;
+    margin-top:30px;
+    margin-bottom:20px;
+}
+.purchase-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:40px;
+    padding:20px;
+    background-color:rgb(233, 233, 233);
+    border-radius:20px;
+    
+}
+.unos-informacija img{
+    width:30px;
+    height:30px;
+}
+.produkt img{
+    height:200px;
+    width:150px;
+    background-color: white;
+    border-radius:10%;
+    margin-top:10px;
+}
+.unos-informacija{
+    display:grid;
+    grid-template-columns: repeat(2, 200px);
+    gap:20px;
+}
+.unos-informacija input{
+    border:1px solid rgba(0, 0, 0, 0.226);
+    padding:10px;
+    border-radius:10px;
+    color:#0000009d;
+    font-family:sans-serif;
+    background-color: #ffffff;
+}
+
+.transakcija {
+  display: flex;
+  gap: 10px; 
+}
+
+.payment-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  padding: 10px;
+  cursor: pointer;
+  box-sizing: border-box; 
+}
+
+.payment-button img {
+  max-width: 80px; 
+  max-height: 40px;
+  vertical-align: middle; 
+  pointer-events: none; 
+  border: none; 
+}
+
+.payment-button input[type="radio"] {
+  display: none; 
+}
+
+.payment-button:has(input[type="radio"]:checked) {
+  border: 2px solid black; /
+}
+
+.dostava h2{
+    margin:10px;
+    margin-left:0;
+    font-size:30px;
+}
+
+.checkout-right h2{
+    font-size:30px;
+    text-align: center;
+    margin:10px;
+    margin-right:0;
+    
+}
+.produkt{
+    text-align:center;
+    padding:5px;
+    background-color: #e6e6e6;
+    border:1px solid transparent;
+    border-radius:5%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.opis-produkta{
+    margin-top:10px;
+    padding:10px;
+    border-top:1px solid rgba(0, 0, 0, 0.26);
+    line-height: 1.5;
+}
+.potvrdi{
+    width:200px;
+    height:50px;
+    border-radius:20px;
+    border:1px solid black;
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: black;
+    color:white;
+}
+.potvrdi:hover {
+    background-color: #333;
+    cursor:pointer;
+}
+.opis-tekst-1{
+    font-size:20px;
+    font-weight: bold;
+}
+.opis-tekst-2{
+    font-size:15px;
+    color:rgba(0, 0, 0, 0.795);
+}
+.opis-tekst-4{
+    font-weight:bold;
+}
+
+/*
+MEDIA
+*/
+@media screen and (max-width: 768px) {
+  .header-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-left {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .searchbar {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .searchbar button {
+    width: 100%;
+    border-radius: 30px;
+    margin-bottom: 5px;
+  }
+
+  .news {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .product-grid {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+  }
+
+  .newsletter {
+    flex-direction: column;
+    width: 95%;
+    padding: 10px;
+  }
+
+  .input-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .input-container button {
+    width: 100%;
+    border-radius: 30px;
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .content2 {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .showcase-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .opis-oglasa {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .buy-button {
+    width: 100%;
+  }
+
+  .purchase-window {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .purchase-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .unos-informacija {
+    grid-template-columns: 1fr;
+  }
+
+  .produkt img {
+    width: 100px;
+    height: auto;
+  }
+
+  .transakcija {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .payment-button {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-banner p {
+    font-size: 10px;
+  }
+
+  .nav-left {
+    gap: 5px;
+  }
+
+  .searchbar button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .product-card {
+    padding: 10px;
+  }
+
+  .product-card h3 {
+    font-size: 16px;
+  }
+
+  .product-card p {
+    font-size: 14px;
+  }
+
+  .product-card button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .newsletter {
+    padding: 5px;
+  }
+
+  .newsletter h2 {
+    font-size: 18px;
+  }
+
+  .newsletter p {
+    font-size: 14px;
+  }
+
+  .input-container {
+    padding: 5px;
+  }
+
+  .input-container button {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .footer {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .showcase-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cijena-patike {
+    font-size: 20px;
+  }
+
+  .opis-patike {
+    font-size: 14px;
+  }
+
+  .buy-button {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+
+  .purchase-window {
+    width: 100%;
+  }
+
+  .naslov-placanja {
+    font-size: 30px;
+  }
+
+  .purchase-container {
+    padding: 10px;
+  }
+
+  .unos-informacija input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .checkout-right h2 {
+    font-size: 22px;
+  }
+
+  .potvrdi {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .opis-tekst-1 {
+    font-size: 16px;
+  }
+
+  .opis-tekst-2 {
+    font-size: 13px;
+  }
+
+  .payment-button img {
+    max-width: 60px;
+    max-height: 30px;
+  }
+}
