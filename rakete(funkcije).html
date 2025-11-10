@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("svemir.jpg");
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="polje">lalla</div>
+
+    <script>
+        function Slika(livo, gore) {
+            var slika = document.createElement('img');
+            slika.src = "raketa.png";
+            slika.style.position = "absolute";
+            slika.style.left = livo + "px";
+            slika.style.top = gore + "px";
+
+            var pic = document.querySelector('.polje');
+            pic.append(slika);
+            pokreni(slika);
+
+            slika.addEventListener('click', sakrijRaketu);
+        }
+
+        function pokreni(slika) {
+            setInterval(function () {
+                slika.style.left = Math.floor(Math.random() * 1000) + "px";
+                slika.style.top = Math.floor(Math.random() * 800) + "px";
+            }, 1000);
+        }
+
+        function sakrijRaketu(e) {
+            console.log(e);
+            e.target.style.display = "none";
+        }
+
+
+        const slika1 = new Slika(100, 254);
+        const slika2 = new Slika(450, 523);
+        const slika3 = new Slika(757, 120);
+        const slika4 = new Slika(48, 142);
+    </script>
+
+</body>
+
+</html>
